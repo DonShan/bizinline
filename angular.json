@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "api-interfaces": "libs/api-interfaces",
+    "bizinline": "apps/bizinline",
+    "bizinline-e2e": "apps/bizinline-e2e"
+  }
+}
