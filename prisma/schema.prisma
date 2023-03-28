@@ -29,3 +29,33 @@ model User {
   @@map("users")
   
 }
+
+model RequestInfromation {
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updateAt DateTime @updatedAt
+  companyName String
+  firstName String
+  lastName String
+  phoneNumber String
+  email String @unique
+
+  @@map("RequestInfromation")
+}
+
+model RegisterforBizinline{
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updateAt DateTime @updatedAt
+  companyName String
+  companyWebsite String
+  ammoutofUsers Int
+  firstName String
+  lastName String
+  phoneNumber String
+  email String @unique
+
+
+  @@map("RegisterforBizinline")
+
+}
